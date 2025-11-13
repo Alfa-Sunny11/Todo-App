@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+      <!-- Title Icon Adding -->
+    <link rel="icon" type="image/x-icon" href="to-do-list.png">
+    <!-- Css File Adding -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>My Tasks</h1>
+        
+        <!-- Form to add new tasks -->
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Add a new task..." autocomplete="off">
+            <button type="submit">Add</button>
+        </form>
+
+        <!-- List where tasks will be displayed -->
+        <ul id="task-list">
+            <!-- Tasks will be dynamically injected here -->
+        </ul>
+        
+        <!-- Shown when list is empty -->
+        <div id="empty-state" class="hidden">
+            <p>Your task list is empty. Add a task to get started!</p>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
